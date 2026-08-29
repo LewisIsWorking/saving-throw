@@ -7,11 +7,12 @@ folder's README, plus any files the game needs to run.
 
 ### [Saving Throw](games/d20-saving-throw/) 🎲
 
-Roll a d20 against a target number and drink when you fail the save. Ships with
-a browser-based roller (`roller.html`) driven by an editable `rules.json`, so
-you can retune the outcomes without touching any code.
+Roll a d20, resolve the result, pass the die left. Twenty outcomes running from
+a plain "you drink" up to Waterfall, Rule Maker and Thumb Master. Two of them —
+Reverse and Squire — persist rather than resolving, so the table's shape drifts
+as the night goes on. One hit = 2 sips.
 
-*Rules and files not yet added — see the folder.*
+*Rules written up; `rules.json` and `roller.html` still to be added.*
 
 ### [Horse Race](games/horse-race/) 🐎
 
