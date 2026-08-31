@@ -21,7 +21,7 @@ two sips, not two drinks. A Natural 20 handing out 5 is five sips.
 | 2 | Neighbour | Either neighbour — left or right, your call — drinks 2 |
 | 3 | Volunteer | You drink 1, then round the table 1 each, on and on, until somebody volunteers to drink 5 |
 | 4 | Across | Person across from you drinks 2 |
-| 5 | Your Choice | Anyone you name drinks 2 — **or** dare them instead: they do it and drink nothing, they duck it and drink 4 |
+| 5 | Dare | Dare anyone at the table: they do it, or they drink 5 |
 | 6 | Everyone | Everyone drinks 2 |
 | 7 | Waterfall | All start drinking; you stop when you want, each player can only stop once the person on their right has |
 | 8 | Categories | Name a category, go round the table, first to stall or repeat drinks |
@@ -65,26 +65,23 @@ Two things to settle up front:
 If your table has the stamina to sit through six laps, raise the closing number
 rather than capping the chain — a cap turns it back into an ordinary result.
 
-## Substituting a dare
+## Dares
 
-Roll a **5** and you have two ways to spend it:
+Roll a **5**: name anyone at the table and dare them. They do it, or they drink
+**5**. That is the whole result — the roll and the refusal are the same number.
 
-- **Name someone and they drink 2** — the plain version, unchanged.
-- **Dare them instead.** They do it and they drink **nothing**. They refuse and
-  they drink **4** — two hits instead of one.
-
-That is a live decision on both sides. Daring is a gamble for you: pitch it too
-soft and they will just do it and walk away dry. It is a squeeze for them:
-take the dare, or take double.
+Pitch the dare too soft and they will just do it and walk away dry; pitch it too
+hard and you have handed them an easy five sips. That squeeze is the whole
+point of the result.
 
 Two things to hold to, or 5 stops being fun:
 
 - **The dare happens now, at the table.** If it needs leaving the room, a phone,
   or another person's involvement, it is not a dare, it is a side quest.
-- **Refusing is always allowed.** The 4 is the entire penalty — nobody is
-  obliged to do anything, and "no" costs exactly four sips and nothing else.
+- **Refusing is always allowed.** The 5 is the entire penalty — nobody is
+  obliged to do anything, and "no" costs exactly five sips and nothing else.
 
-If 4 is not enough teeth for your table, raise the refusal rather than removing
+If 5 is not enough teeth for your table, raise the refusal rather than removing
 the right to refuse.
 
 ## The two that drift
