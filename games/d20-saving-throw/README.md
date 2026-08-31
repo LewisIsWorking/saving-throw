@@ -18,8 +18,8 @@ two sips, not two drinks. A Natural 20 handing out 5 is five sips.
 | Roll | Name | Effect |
 |:---:|---|---|
 | 1 | Critical Fail | You drink 2 |
-| 2 | Left | Person on your left drinks 2 |
-| 3 | Right | Person on your right drinks 2 |
+| 2 | Neighbour | Either neighbour — left or right, your call — drinks 2 |
+| 3 | Volunteer | You drink 1, then round the table 1 each, on and on, until somebody volunteers to drink 5 |
 | 4 | Across | Person across from you drinks 2 |
 | 5 | Your Choice | Anyone you name drinks 2 — **or** dare them instead: they do it and drink nothing, they duck it and drink 4 |
 | 6 | Everyone | Everyone drinks 2 |
@@ -31,12 +31,39 @@ two sips, not two drinks. A Natural 20 handing out 5 is five sips.
 | 12 | Thumb Master | Thumb on the table any time; last to follow drinks |
 | 13 | Truth or Drink | Answer the question or drink |
 | 14 | Two Truths and a Lie | Table guesses; wrong guessers drink, or you drink if they all get it |
-| 15 | Reverse | Play direction flips and left/right invert for the rest of the game; another 15 flips it back |
+| 15 | Reverse | Direction of play flips for the rest of the game; another 15 flips it back |
 | 16 | Initiative | Die goes once round, everyone rolls, lowest drinks 2, ties reroll |
 | 17 | Double Tap | Reroll and apply the result to two people |
 | 18 | Most Likely To | Table points, most fingers drinks |
 | 19 | Squire | Nominate someone permanently — whenever you drink, they drink. Only a new 19 reassigns. Chains resolve downhill |
 | 20 | Natural 20 | Either everyone else drinks, or hand 5 to one person. Immune until the die returns to you |
+
+## The Volunteer chain
+
+Roll a **3** and you start a chain that does not have a natural end.
+
+1. **You drink 1.**
+2. The next player **in the current direction of play** drinks 1.
+3. So does the next, and the next — round and round the table, indefinitely.
+   Passing your seat again changes nothing; the chain does not stop at a lap.
+4. It ends the moment somebody **volunteers to drink 5**. They take the 5, the
+   chain is over, and play resumes from where it left off.
+
+Note what that costs. Every lap is another 1 on everybody, so a chain nobody
+breaks gets more expensive than the 5 that would have ended it — a table of
+five pays 5 a lap between them. Volunteering is not a forfeit, it is the cheap
+option once the chain has run far enough, and the whole rule is a game of who
+blinks first.
+
+Two things to settle up front:
+
+- **Anyone may volunteer at any point**, not only the player whose turn it is.
+  Somebody four seats away can cut it short.
+- **Volunteering is not compulsory.** Nobody can be made to take the 5, which
+  is exactly why the chain can run as long as it does.
+
+If your table has the stamina to sit through six laps, raise the closing number
+rather than capping the chain — a cap turns it back into an ordinary result.
 
 ## Substituting a dare
 
@@ -65,11 +92,16 @@ the right to refuse.
 Most results resolve and vanish. **15** and **19** do not — they are what make
 the table state wander over the course of a night.
 
-**15 — Reverse.** Play direction flips, and so do left and right. That means
-**2** and **3** now point at different people than they did a minute ago, and
-**7 (Waterfall)** chains the other way round the table. It holds until someone
-rolls another 15, which flips it back. Two 15s do not stack into anything —
-they just undo each other.
+**15 — Reverse.** The direction of play flips: the die now travels the other
+way, and so does anything that follows the table in order — **7 (Waterfall)**
+chains the opposite way, and a **3 (Volunteer)** chain already running turns
+round and carries on from whoever is next in the new direction. It holds until
+someone rolls another 15, which flips it back. Two 15s do not stack into
+anything — they just undo each other.
+
+Reverse does **not** touch targeting. **2 (Neighbour)** is the roller's choice
+of either side, so there is nothing there to invert, and **4 (Across)** points
+at the same seat whichever way the die is going.
 
 **19 — Squire.** Permanent, and the only thing that clears it is somebody else
 rolling a 19. Because squire links persist, they **chain**: if A squires B and
