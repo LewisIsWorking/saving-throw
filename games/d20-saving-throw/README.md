@@ -24,19 +24,53 @@ two sips, not two drinks. A Natural 20 handing out 5 is five sips.
 | 5 | Dare | Dare anyone at the table: they do it, or they drink 5 |
 | 6 | Everyone | Everyone drinks 2 |
 | 7 | Waterfall | All start drinking; you stop when you want, each player can only stop once the person on their right has |
-| 8 | Categories | Name a category, go round the table, first to stall or repeat drinks |
+| 8 | Categories | Name a category, go round the table, first to stall or repeat drinks — [roll one](prompts.md#8--categories) |
 | 9 | Rule Maker | Invent a rule, holds until your next turn, break it and drink |
 | 10 | Duel | Pick someone, both roll, lower drinks 2, tie means both |
 | 11 | Deflect | Immune until your next turn |
 | 12 | Thumb Master | Thumb on the table any time; last to follow drinks |
-| 13 | Truth or Drink | Answer the question or drink |
+| 13 | Truth or Drink | Answer the question or drink — [roll one](prompts.md#13--truth-or-drink) |
 | 14 | Two Truths and a Lie | Table guesses; wrong guessers drink, or you drink if they all get it |
 | 15 | Reverse | Direction of play flips for the rest of the game; another 15 flips it back |
 | 16 | Initiative | Die goes once round, everyone rolls, lowest drinks 2, ties reroll |
 | 17 | Double Tap | Reroll and apply the result to two people |
-| 18 | Most Likely To | Table points, most fingers drinks |
+| 18 | Most Likely To | Table points, most fingers drinks — [roll one](prompts.md#18--most-likely-to) |
 | 19 | Squire | Nominate someone permanently — whenever you drink, they drink. Only a new 19 reassigns. Chains resolve downhill |
 | 20 | Natural 20 | Either everyone else drinks, or hand 5 to one person. Immune until the die returns to you |
+
+## Echoes
+
+A d20 has no memory, which is why hour three plays exactly like minute three.
+This gives it one.
+
+**The second time a number comes up in the same lap, it echoes: everything it
+makes anyone drink doubles.** A second 6 is everyone drinks 4. A second 5 is a
+dare or ten sips. A second 12 costs the slowest thumb double. Third time in the
+same lap, triple it.
+
+A **lap** is one circuit of the table — it closes when the die comes back to
+whoever started it, whichever way it is travelling. Then the slate wipes and
+numbers are worth face value again.
+
+Two notes:
+
+- **It stacks onto the result, not instead of it.** An echoed 15 still just
+  flips direction; there is nothing there to double. Same for 11 and 19.
+- **Track it or it will not happen.** Keep the lap's numbers where everyone can
+  see them — a tally on a beermat is enough. Six-odd numbers is about the limit
+  of what a table this far into a session will hold in its head.
+
+With five or six players an echo lands in most laps, so the table gets a spike
+it did not get from a flat d20.
+
+## Prompts
+
+**8**, **13** and **18** all hand the roller a blank page, and by the third
+airing of the night that page reads "erm… car brands." Don't invent one — roll
+the die again and read off [`prompts.md`](prompts.md). Twenty categories,
+twenty questions, twenty most-likely-tos, one d20 roll each.
+
+Landed on something your table would rather skip? Roll again. It costs nothing.
 
 ## The Volunteer chain
 

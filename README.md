@@ -29,6 +29,7 @@ README.md                    this file
 games/
   d20-saving-throw/
     README.md                rules
+    prompts.md               prompt lists for 8, 13 and 18
     rules.json               outcome table
     roller.html              browser roller
   horse-race/
