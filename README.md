@@ -8,9 +8,10 @@ folder's README, plus any files the game needs to run.
 ### [Saving Throw](games/d20-saving-throw/) 🎲
 
 Roll a d20, resolve the result, pass the die left. Twenty outcomes running from
-a plain "you drink" up to Waterfall, Rule Maker and Thumb Master. Two of them —
-Reverse and Squire — persist rather than resolving, so the table's shape drifts
-as the night goes on. One hit = 2 sips.
+a plain "you drink" up to Waterfall, Rule Maker and Thumb Master. Several refuse
+to resolve neatly: Volunteer sends 1 a head round the table on and on until
+somebody takes a 5 to end it, and Reverse and Squire persist outright, so the
+table's shape drifts as the night goes on. One hit = 2 sips.
 
 *Rules written up; `rules.json` and `roller.html` still to be added.*
 
