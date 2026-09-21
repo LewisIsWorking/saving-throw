@@ -10,33 +10,44 @@ the rest of the night plays.
 
 ## The unit
 
-**One hit = 2 sips.** Everywhere the table below says "drinks 2", that means
-two sips, not two drinks. A Natural 20 handing out 5 is five sips.
+Every number in the table is **sips**. "Drinks 2" is two sips.
+
+**Rolls 1-6 cost their own number.** A 1 costs 1, a 6 costs 6. The bottom of the
+table reads at a glance, before anybody has to explain anything.
+
+## Two options, always
+
+Every result offers **two options, and they differ in kind** — never just in
+amount. Risk against certainty, yourself against the table, now against later,
+drinking against doing. "Drink 2 or drink 3" is not a choice. "Everyone drinks
+1, or you drink 6 alone" is.
+
+The roller picks, unless the entry hands the choice to a target.
 
 ## The table
 
-| Roll | Name | Effect |
-|:---:|---|---|
-| 1 | Critical Fail | You drink 2 |
-| 2 | Neighbour | Either neighbour — left or right, your call — drinks 2 |
-| 3 | Volunteer | You drink 1, then round the table 1 each, on and on, until somebody volunteers to drink 5 |
-| 4 | Across | Person across from you drinks 2 |
-| 5 | Dare | Dare anyone at the table: they do it, or they drink 5 |
-| 6 | Everyone | Everyone drinks 2 |
-| 7 | Waterfall | All start drinking; you stop when you want, each player can only stop once the person on their right has |
-| 8 | Categories | Name a category, go round the table, first to stall or repeat drinks — [roll one](prompts.md#8--categories) |
-| 9 | Rule Maker | Invent a rule, holds until your next turn, break it and drink |
-| 10 | Duel | Pick someone, both roll, lower drinks 2, tie means both |
-| 11 | Deflect | Immune until your next turn |
-| 12 | Thumb Master | Thumb on the table any time; last to follow drinks |
-| 13 | Truth or Drink | Answer the question or drink — [roll one](prompts.md#13--truth-or-drink) |
-| 14 | Two Truths and a Lie | Table guesses; wrong guessers drink, or you drink if they all get it |
-| 15 | Reverse | Direction of play flips for the rest of the game; another 15 flips it back |
-| 16 | Initiative | Die goes once round, everyone rolls, lowest drinks 2, ties reroll |
-| 17 | Double Tap | Reroll and apply the result to two people |
-| 18 | Most Likely To | Table points, most fingers drinks — [roll one](prompts.md#18--most-likely-to) |
-| 19 | Squire | Nominate someone permanently — whenever you drink, they drink. Only a new 19 reassigns. Chains resolve downhill |
-| 20 | Natural 20 | Either everyone else drinks, or hand 5 to one person. Immune until the die returns to you |
+| Roll | Name | Option A | Option B |
+|:---:|---|---|---|
+| 1 | Critical Fail | Drink 1 now | Drink 2 when the lap closes |
+| 2 | Neighbour | Either neighbour drinks 2 — you pick | Both neighbours drink 1 |
+| 3 | Volunteer | Start the chain: 1 each round the table until someone takes 5 | Skip it — you drink 3 |
+| 4 | Cut the Wire | Wire another player | Wire yourself — if it's cut, everyone else drinks 5 |
+| 5 | Dare | Dare anyone: they do it, or drink 5 | Take one from the table: do it and everyone else drinks 2, or drink 5 |
+| 6 | Everyone | Everyone drinks 1 | You drink 6, nobody else drinks |
+| 7 | Waterfall | Full waterfall down the table | Sip-off against one player, loser drinks 3 |
+| 8 | Categories | [Roll a category](prompts.md#8--categories) — first to stall drinks 2 | Name it and go first: stall and drink 4, survive a lap and everyone else drinks 1 |
+| 9 | Rule Maker | A rule until your next turn, breaking it costs 1 | A rule for the rest of the game, and you drink 3 now |
+| 10 | Duel | Duel one player, lower roll drinks 2 | Duel the table: drink 1 for every player who beats you |
+| 11 | Deflect | Immune until your next turn | Bank it — cancel drinks aimed at you, any time |
+| 12 | Thumb Master | You hold it, last to follow drinks 2 | Name someone else, but if they catch you out you drink 4 |
+| 13 | Truth or Drink | [Ask anyone](prompts.md#13--truth-or-drink) — answer or drink 2 | Answer one yourself: answer and everyone else drinks 1, or drink 4 |
+| 14 | Two Truths and a Lie | You tell — wrong guessers drink 2, all correct and you drink 3 | Make someone else tell and guess alone: right they drink 3, wrong you do |
+| 15 | Reverse | Flip the direction of play now | Bank it — flip at any moment, including mid-chain |
+| 16 | Bank | Hold a strike: make anyone drink 3, later | Hold a shield: cancel drinks aimed at you, later |
+| 17 | Double Tap | Reroll, result hits two players you pick | Reroll, it hits you doubled and everyone else drinks 1 |
+| 18 | Most Likely To | [Roll a prompt](prompts.md#18--most-likely-to) — most fingers drinks 2 | Aim one at a player: table agrees they drink 4, disagrees you do |
+| 19 | Squire | Nominate a squire — when you drink, they drink 1 | Serve someone instead: drink 1 when they do, immune to all else until your next turn |
+| 20 | Natural 20 | Everyone else drinks 2 | One player drinks 5, and nothing touches you until the die comes back |
 
 ## Echoes
 
@@ -99,14 +110,37 @@ Two things to settle up front:
 If your table has the stamina to sit through six laps, raise the closing number
 rather than capping the chain — a cap turns it back into an ordinary result.
 
+## Cut the Wire
+
+Roll a **4** and you arm something.
+
+**Wire another player.** They name a number — their wire. Their tab starts at
+zero and climbs by 1 for every roll between now and their turn; when their turn
+arrives, they drink it. If their number comes up first the wire is cut: they
+walk away with nothing, and **you** drink 5.
+
+They pick the wire, not you. It doesn't change the odds — any number is 1-in-20
+— but it's *their* number, and they will groan at every near miss. That is the
+whole appeal.
+
+**Or wire yourself.** The table names your number and the tab runs to your own
+next turn. Reach it and you drink the lot; get cut first and **everyone else**
+drinks 5.
+
+Reaching for a distant target buys a bigger tab and a better chance of eating
+the 5 yourself. One wire live at a time, unless an app is holding them.
+
 ## Dares
 
-Roll a **5**: name anyone at the table and dare them. They do it, or they drink
-**5**. That is the whole result — the roll and the refusal are the same number.
+Roll a **5** and pick which way it points.
 
-Pitch the dare too soft and they will just do it and walk away dry; pitch it too
-hard and you have handed them an easy five sips. That squeeze is the whole
-point of the result.
+**Dare anyone at the table.** They do it, or they drink **5** — the roll and the
+refusal are the same number. Pitch it too soft and they will just do it and walk
+away dry; pitch it too hard and you have handed them an easy five sips.
+
+**Or take one yourself.** The table sets the dare. Do it and **everyone else
+drinks 2**; duck it and you drink the 5 on your own. Aiming it inward is how you
+turn your own turn into everybody else's problem.
 
 Two things to hold to, or 5 stops being fun:
 
@@ -118,10 +152,11 @@ Two things to hold to, or 5 stops being fun:
 If 5 is not enough teeth for your table, raise the refusal rather than removing
 the right to refuse.
 
-## The two that drift
+## What persists
 
-Most results resolve and vanish. **15** and **19** do not — they are what make
-the table state wander over the course of a night.
+Most results resolve and vanish. These do not, and they are what make the table
+state wander over a night: banked tokens from **11**, **15** and **16**, a live
+wire from **4**, a permanent rule from **9**, and the two below.
 
 **15 — Reverse.** The direction of play flips: the die now travels the other
 way, and so does anything that follows the table in order — **7 (Waterfall)**
@@ -131,8 +166,8 @@ someone rolls another 15, which flips it back. Two 15s do not stack into
 anything — they just undo each other.
 
 Reverse does **not** touch targeting. **2 (Neighbour)** is the roller's choice
-of either side, so there is nothing there to invert, and **4 (Across)** points
-at the same seat whichever way the die is going.
+of either side, so there is nothing there to invert. It does change which way a
+**4 (Cut the Wire)** tab counts, since that follows the order of play.
 
 **19 — Squire.** Permanent, and the only thing that clears it is somebody else
 rolling a 19. Because squire links persist, they **chain**: if A squires B and
@@ -146,14 +181,6 @@ whether you cap it, or you will be arguing about it at 1am.
 
 ---
 
-> **Still to add:** the game's two files were never pushed and are not in this
-> repo yet.
->
-> ```
-> games/d20-saving-throw/rules.json     outcome table, editable
-> games/d20-saving-throw/roller.html    browser roller
-> ```
->
-> If `roller.html` loads `rules.json` by a relative path it will still work —
-> the two sit side by side in this directory. Only a path reaching up out of
-> the old repo root needs editing.
+> **Still to add:** `roller.html`. [`rules.json`](rules.json) now carries the
+> full table in machine-readable form, in the same ruleset format the app will
+> load.

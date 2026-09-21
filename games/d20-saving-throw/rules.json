@@ -1,0 +1,232 @@
+{
+  "format": "coo.ruleset/v1",
+  "id": "saving-throw",
+  "name": "Saving Throw",
+  "die": { "sides": 20 },
+  "unit": { "name": "sip", "note": "Every amount in this file is sips." },
+  "principles": {
+    "twoOptions": "Every entry offers exactly two options, and they differ in kind rather than in amount.",
+    "lowBand": "Rolls 1-6 cost their own number. The bottom of the table reads at a glance."
+  },
+  "modifiers": [
+    {
+      "id": "echo",
+      "name": "Echo",
+      "rule": "Second time a number comes up in the same lap, its amounts double. Third time, triple.",
+      "resets": "lap"
+    }
+  ],
+  "entries": [
+    {
+      "roll": 1,
+      "name": "Critical Fail",
+      "axis": "now-vs-later",
+      "options": [
+        { "id": "take-it", "label": "Drink 1 now", "drink": { "target": "self", "amount": 1 }, "timing": "now" },
+        { "id": "defer",   "label": "Drink 2 when the lap closes", "drink": { "target": "self", "amount": 2 }, "timing": "end-of-lap" }
+      ]
+    },
+    {
+      "roll": 2,
+      "name": "Neighbour",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        { "id": "one-side",  "label": "Either neighbour drinks 2 — you pick", "drink": { "target": "either-neighbour", "amount": 2 } },
+        { "id": "both-sides","label": "Both neighbours drink 1", "drink": { "target": "both-neighbours", "amount": 1 } }
+      ]
+    },
+    {
+      "roll": 3,
+      "name": "Volunteer",
+      "axis": "chaos-vs-certainty",
+      "options": [
+        {
+          "id": "start-chain", "label": "Start the chain",
+          "drink": { "target": "self", "amount": 1 },
+          "state": { "kind": "chain", "step": 1, "direction": "current", "endsWhen": "a player volunteers to drink 5", "scope": "until-ended" }
+        },
+        { "id": "buy-out", "label": "Skip it — you drink 3", "drink": { "target": "self", "amount": 3 } }
+      ]
+    },
+    {
+      "roll": 4,
+      "name": "Cut the Wire",
+      "axis": "target-vs-self",
+      "options": [
+        {
+          "id": "wire-them", "label": "Wire another player",
+          "state": {
+            "kind": "wire", "holder": "choose-one", "wireNumberChosenBy": "holder",
+            "tab": "+1 per roll until their turn", "onReach": "holder drinks the tab",
+            "onCut": { "target": "setter", "amount": 5 }, "scope": "until-resolved"
+          }
+        },
+        {
+          "id": "wire-self", "label": "Wire yourself — if it's cut, everyone else drinks 5",
+          "state": {
+            "kind": "wire", "holder": "self", "wireNumberChosenBy": "table",
+            "tab": "+1 per roll until your next turn", "onReach": "you drink the tab",
+            "onCut": { "target": "everyone-else", "amount": 5 }, "scope": "until-resolved"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 5,
+      "name": "Dare",
+      "axis": "aim-out-vs-aim-in",
+      "options": [
+        { "id": "dare-them", "label": "Dare anyone — they do it, or drink 5", "drink": { "target": "choose-one", "amount": 5, "unless": "they do the dare" }, "manual": true },
+        { "id": "dare-me",   "label": "Take one from the table — do it and everyone else drinks 2, or you drink 5", "drink": { "target": "self", "amount": 5, "unless": "you do the dare, in which case everyone else drinks 2" }, "manual": true }
+      ]
+    },
+    {
+      "roll": 6,
+      "name": "Everyone",
+      "axis": "self-vs-table",
+      "options": [
+        { "id": "spread",  "label": "Everyone drinks 1", "drink": { "target": "everyone", "amount": 1 } },
+        { "id": "martyr",  "label": "You drink 6, nobody else drinks", "drink": { "target": "self", "amount": 6 } }
+      ]
+    },
+    {
+      "roll": 7,
+      "name": "Waterfall",
+      "axis": "table-vs-duel",
+      "options": [
+        { "id": "full", "label": "Waterfall — nobody stops until the player before them does", "drink": { "target": "everyone", "amount": "waterfall" }, "manual": true },
+        { "id": "sip-off", "label": "Sip-off against one player — loser drinks 3", "drink": { "target": "choose-one", "amount": 3, "resolvedBy": "contest" }, "manual": true }
+      ]
+    },
+    {
+      "roll": 8,
+      "name": "Categories",
+      "axis": "safe-vs-bet",
+      "prompts": "prompts.md#8--categories",
+      "options": [
+        { "id": "standard", "label": "Roll a category — first to stall drinks 2", "drink": { "target": "loser", "amount": 2 }, "manual": true },
+        { "id": "bet", "label": "Name it and go first — stall and drink 4, survive a lap and everyone else drinks 1", "manual": true }
+      ]
+    },
+    {
+      "roll": 9,
+      "name": "Rule Maker",
+      "axis": "short-vs-permanent",
+      "options": [
+        { "id": "short", "label": "A rule until your next turn — breaking it costs 1",
+          "state": { "kind": "rule", "penalty": 1, "scope": "until-your-next-turn" } },
+        { "id": "permanent", "label": "A rule for the rest of the game — costs you 3 now",
+          "drink": { "target": "self", "amount": 3 },
+          "state": { "kind": "rule", "penalty": 1, "scope": "permanent" } }
+      ]
+    },
+    {
+      "roll": 10,
+      "name": "Duel",
+      "axis": "one-vs-all",
+      "options": [
+        { "id": "single", "label": "Duel one player — both roll, lower drinks 2", "drink": { "target": "loser", "amount": 2, "resolvedBy": "roll" } },
+        { "id": "table",  "label": "Duel the table — you drink 1 for every player who beats you", "drink": { "target": "self", "amount": "per-player-beating-you", "resolvedBy": "roll" } }
+      ]
+    },
+    {
+      "roll": 11,
+      "name": "Deflect",
+      "axis": "now-vs-banked",
+      "options": [
+        { "id": "now",    "label": "Immune until your next turn", "state": { "kind": "immunity", "scope": "until-your-next-turn" } },
+        { "id": "banked", "label": "Bank it — cancel drinks aimed at you, any time", "state": { "kind": "token", "token": "shield", "scope": "until-spent" } }
+      ]
+    },
+    {
+      "roll": 12,
+      "name": "Thumb Master",
+      "axis": "hold-vs-delegate",
+      "options": [
+        { "id": "hold", "label": "You're thumb master — last to follow drinks 2",
+          "state": { "kind": "thumb-master", "holder": "self", "penalty": 2, "scope": "until-your-next-turn" } },
+        { "id": "delegate", "label": "Name someone else — but if they catch you out, you drink 4",
+          "state": { "kind": "thumb-master", "holder": "choose-one", "penalty": 2, "setterPenalty": 4, "scope": "until-your-next-turn" } }
+      ]
+    },
+    {
+      "roll": 13,
+      "name": "Truth or Drink",
+      "axis": "ask-vs-answer",
+      "prompts": "prompts.md#13--truth-or-drink",
+      "options": [
+        { "id": "ask",    "label": "Ask anyone — they answer or drink 2", "drink": { "target": "choose-one", "amount": 2, "unless": "they answer" }, "manual": true },
+        { "id": "answer", "label": "Answer one yourself — answer and everyone else drinks 1, or drink 4", "drink": { "target": "self", "amount": 4, "unless": "you answer, in which case everyone else drinks 1" }, "manual": true }
+      ]
+    },
+    {
+      "roll": 14,
+      "name": "Two Truths and a Lie",
+      "axis": "tell-vs-guess",
+      "options": [
+        { "id": "tell",  "label": "You tell — wrong guessers drink 2, or you drink 3 if they all get it", "manual": true },
+        { "id": "guess", "label": "Make someone else tell and guess alone — right, they drink 3; wrong, you do", "manual": true }
+      ]
+    },
+    {
+      "roll": 15,
+      "name": "Reverse",
+      "axis": "now-vs-banked",
+      "options": [
+        { "id": "now",    "label": "Flip the direction of play now", "state": { "kind": "direction", "action": "flip", "scope": "permanent" } },
+        { "id": "banked", "label": "Bank it — flip at any moment you choose, including mid-chain", "state": { "kind": "token", "token": "reverse", "scope": "until-spent" } }
+      ]
+    },
+    {
+      "roll": 16,
+      "name": "Bank",
+      "axis": "offence-vs-defence",
+      "options": [
+        { "id": "strike", "label": "Hold it — spend it later to make anyone drink 3", "state": { "kind": "token", "token": "strike", "value": 3, "scope": "until-spent" } },
+        { "id": "shield", "label": "Hold it — spend it later to cancel any drinks aimed at you", "state": { "kind": "token", "token": "shield", "scope": "until-spent" } }
+      ]
+    },
+    {
+      "roll": 17,
+      "name": "Double Tap",
+      "axis": "spread-vs-concentrate",
+      "options": [
+        { "id": "two-others", "label": "Reroll — the result hits two players you pick", "reroll": { "applyTo": "choose-two" } },
+        { "id": "on-me",      "label": "Reroll — it hits you doubled, and everyone else drinks 1", "reroll": { "applyTo": "self", "multiplier": 2 }, "drink": { "target": "everyone-else", "amount": 1 } }
+      ]
+    },
+    {
+      "roll": 18,
+      "name": "Most Likely To",
+      "axis": "safe-vs-bet",
+      "prompts": "prompts.md#18--most-likely-to",
+      "options": [
+        { "id": "standard", "label": "Roll a prompt — most fingers drinks 2", "drink": { "target": "most-pointed-at", "amount": 2 }, "manual": true },
+        { "id": "called",   "label": "Aim one at a player — table agrees and they drink 4, table disagrees and you do", "drink": { "amount": 4, "resolvedBy": "vote" }, "manual": true }
+      ]
+    },
+    {
+      "roll": 19,
+      "name": "Squire",
+      "axis": "lord-vs-vassal",
+      "options": [
+        { "id": "take-squire", "label": "Nominate a squire — whenever you drink, they drink 1",
+          "state": { "kind": "squire", "lord": "self", "squire": "choose-one", "amount": 1, "scope": "until-replaced" } },
+        { "id": "serve", "label": "Serve someone — you drink 1 whenever they do, but nothing else touches you until your next turn",
+          "state": { "kind": "squire", "lord": "choose-one", "squire": "self", "amount": 1, "scope": "until-replaced" },
+          "alsoState": { "kind": "immunity", "scope": "until-your-next-turn" } }
+      ]
+    },
+    {
+      "roll": 20,
+      "name": "Natural 20",
+      "axis": "spread-vs-concentrate",
+      "options": [
+        { "id": "spread",      "label": "Everyone else drinks 2", "drink": { "target": "everyone-else", "amount": 2 } },
+        { "id": "concentrate", "label": "One player drinks 5, and nothing touches you until the die comes back",
+          "drink": { "target": "choose-one", "amount": 5 },
+          "state": { "kind": "immunity", "scope": "until-die-returns" } }
+      ]
+    }
+  ]
+}
