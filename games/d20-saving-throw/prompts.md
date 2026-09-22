@@ -1,19 +1,19 @@
 # Prompt lists
 
-Three results in the table — **8 Categories**, **13 Truth or Drink** and
-**18 Most Likely To** — are only as good as whatever the roller thinks of on
+Three results in the table - **8 Categories**, **13 Truth or Drink** and
+**18 Most Likely To** - are only as good as whatever the roller thinks of on
 the spot. By the third airing of the night that is usually "erm… car brands."
 
 So don't think of one. **Roll the die again** and read off the list. You already
 have a d20 in your hand and each list is twenty long.
 
 If a prompt has already been used tonight, roll again. If it lands on something
-your table would rather not do, roll again — that costs nothing and needs no
+your table would rather not do, roll again - that costs nothing and needs no
 discussion.
 
 ---
 
-## 8 — Categories
+## 8: Categories
 
 Name the category, then go round the table. First to stall or repeat drinks 2.
 
@@ -42,10 +42,10 @@ Name the category, then go round the table. First to stall or repeat drinks 2.
 
 ---
 
-## 13 — Truth or Drink
+## 13: Truth or Drink
 
 Read the question to whoever you like. They answer honestly, or they drink 2.
-Drinking is always a clean out — nobody is owed a reason.
+Drinking is always a clean out - nobody is owed a reason.
 
 | d20 | Question |
 |:---:|---|
@@ -61,7 +61,7 @@ Drinking is always a clean out — nobody is owed a reason.
 | 10 | Worst gift you've ever given? |
 | 11 | What do you do alone that you'd hate a housemate to walk in on? |
 | 12 | Most childish thing you still do? |
-| 13 | Who here have you talked about behind their back — and roughly what about? |
+| 13 | Who here have you talked about behind their back - and roughly what about? |
 | 14 | What's your worst habit in someone else's house? |
 | 15 | Longest you've gone without washing something you should have? |
 | 16 | Which of your opinions would lose you this room? |
@@ -72,7 +72,7 @@ Drinking is always a clean out — nobody is owed a reason.
 
 ---
 
-## 18 — Most Likely To
+## 18: Most Likely To
 
 Read it out, count to three, everyone points. Most fingers drinks 2. A tie
 means both drink.
@@ -104,6 +104,6 @@ means both drink.
 
 ## Adding your own
 
-Twenty is a d20's worth, so keep each list at twenty — swap entries out rather
+Twenty is a d20's worth, so keep each list at twenty - swap entries out rather
 than appending, or the reroll stops working. The house prompts are the ones
 worth keeping: an inside joke lands harder than anything written here.

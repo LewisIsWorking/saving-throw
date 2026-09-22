@@ -34,7 +34,7 @@ and a track that punishes you for backing the favourite.
    - its **suit** is the horse you are backing
    - its **number** is your **stake**, in drinks
 
-   Keep your card in front of you — you will need the number at the end.
+   Keep your card in front of you - you will need the number at the end.
    Players can and will end up on the same horse; that is fine.
 
 ---
@@ -56,7 +56,7 @@ moment the last horse clears it, **flip it face up**:
 
 > Everyone backing **that card's suit** drinks **that card's number**.
 
-So the checkpoints only ever bite once the whole field has moved on — the
+So the checkpoints only ever bite once the whole field has moved on - the
 race has to fully commit before the track collects.
 
 ### Winning
@@ -78,7 +78,7 @@ Back the winner and you are pouring. Back a loser and you are drinking.
 |------|-------|
 | 2–10 | Face value |
 | J, Q, K | **11** |
-| A | Not applicable — the aces are the horses |
+| A | Not applicable - the aces are the horses |
 
 Elevens apply **everywhere a number counts**: your stake, and checkpoint cards.
 

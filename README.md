@@ -1,6 +1,6 @@
 # saving-throw
 
-A small collection of drinking games. One folder per game — rules in each
+A small collection of drinking games. One folder per game - rules in each
 folder's README, plus any files the game needs to run.
 
 ## Games
@@ -19,7 +19,7 @@ table's shape drifts as the night goes on. One hit = 2 sips.
 
 Four aces are horses, a line of face-down cards is the track. Everyone draws a
 card: the suit picks your horse, the number is your stake. Flip the deck and
-your horse runs on its own suit. Back the winner and you hand out drinks — back
+your horse runs on its own suit. Back the winner and you hand out drinks - back
 a loser and you drink your own. Needs one deck and no setup beyond dealing.
 
 ## Layout
