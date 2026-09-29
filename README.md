@@ -13,7 +13,15 @@ to resolve neatly: Volunteer sends 1 a head round the table on and on until
 somebody takes a 5 to end it, and Reverse and Squire persist outright, so the
 table's shape drifts as the night goes on. One hit = 2 sips.
 
-*Rules written up; `rules.json` and `roller.html` still to be added.*
+*Playable in the ComeOnOverUno app, which loads `rules.json`. `roller.html` is still to be added.*
+
+### [Ard Rí: The High King](games/ard-ri/) 👑
+
+Saving Throw's big sibling, on a d100. Every roll is a card you keep: pick one of
+its two options and it goes into your hand. Many cards are powers you play later
+(Ward, Summons, Turning), and a Raid lets you steal a power from someone else's
+hand. The higher you roll, the better the card: Misfortunes at the bottom, the
+four Hallows near the top, and 100 is the crown.
 
 ### [Horse Race](games/horse-race/) 🐎
 
@@ -32,6 +40,9 @@ games/
     prompts.md               prompt lists for 8, 13 and 18
     rules.json               outcome table
     roller.html              browser roller
+  ard-ri/
+    README.md                rules and all 100 cards (generated from rules.json)
+    rules.json               the 100 cards
   horse-race/
     README.md                rules
 ```

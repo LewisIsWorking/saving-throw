@@ -1,0 +1,1869 @@
+{
+  "format": "coo.ruleset/v1",
+  "id": "ard-ri",
+  "name": "Ard Rí: The High King",
+  "die": {
+    "sides": 100
+  },
+  "unit": {
+    "name": "sip",
+    "note": "Every amount in this file is sips."
+  },
+  "principles": {
+    "cards": "Every roll is a card the roller keeps; power cards are played later, and can be stolen.",
+    "twoOptions": "Every entry offers exactly two options, and they differ in kind rather than in amount.",
+    "tiers": "1-15 Misfortunes, 16-70 Court, 71-95 Legends, 96-99 the four Hallows, 100 the crown."
+  },
+  "entries": [
+    {
+      "roll": 1,
+      "name": "Exiled from Tara",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "drink",
+          "label": "Drink 5 and keep your seat"
+        },
+        {
+          "id": "exile",
+          "label": "Skip your next turn, and drink 1 every time anyone else drinks until you are back",
+          "state": {
+            "kind": "skip-turn",
+            "scope": "next-turn"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 2,
+      "name": "The Banshee Wails",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "alone",
+          "label": "You drink 4"
+        },
+        {
+          "id": "mourners",
+          "label": "You drink 2, and so does whoever sits either side of you"
+        }
+      ]
+    },
+    {
+      "roll": 3,
+      "name": "A Broken Geis",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "pay",
+          "label": "Drink 3"
+        },
+        {
+          "id": "atone",
+          "label": "Do whatever the table asks of you, within reason, or drink 6",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 4,
+      "name": "The Blemished King",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "confess",
+          "label": "Drink 3 now"
+        },
+        {
+          "id": "hide",
+          "label": "Drink nothing now, but the next power you play costs you 3 first",
+          "state": {
+            "kind": "rule",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 5,
+      "name": "Bad Omen",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "accept",
+          "label": "Drink 2"
+        },
+        {
+          "id": "defy",
+          "label": "Roll again: 50 or under and you drink 5, over and you drink nothing",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 6,
+      "name": "Forfeit a Hostage",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "give",
+          "label": "Give one of your power cards to the player on your left"
+        },
+        {
+          "id": "keep",
+          "label": "Keep your cards and drink 4"
+        }
+      ]
+    },
+    {
+      "roll": 7,
+      "name": "The Fomorian Tax",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "pay-all",
+          "label": "Drink 1 for every card in your hand"
+        },
+        {
+          "id": "pay-one",
+          "label": "Discard your newest card and drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 8,
+      "name": "Cursed by a Druid",
+      "axis": "short-vs-permanent",
+      "options": [
+        {
+          "id": "brief",
+          "label": "Until your next turn, you drink 1 whenever anyone laughs",
+          "manual": true
+        },
+        {
+          "id": "lingering",
+          "label": "For the rest of the game, you drink 1 whenever you swear",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 9,
+      "name": "Lost in the Mist",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "wander",
+          "label": "Drink 2 now"
+        },
+        {
+          "id": "wait",
+          "label": "The player opposite you chooses when you drink 4, any time before your next turn",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 10,
+      "name": "Satirised by a Bard",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "take-it",
+          "label": "Let the table roast you for ten seconds, then drink 2",
+          "manual": true
+        },
+        {
+          "id": "answer",
+          "label": "Roast yourself for ten seconds instead: do it well and drink nothing",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 11,
+      "name": "Famine",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "hoard",
+          "label": "You drink 3"
+        },
+        {
+          "id": "share",
+          "label": "Everyone drinks 1, you included"
+        }
+      ]
+    },
+    {
+      "roll": 12,
+      "name": "Horse Throws Its Rider",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "fall",
+          "label": "Drink 3"
+        },
+        {
+          "id": "cling",
+          "label": "Flip a coin: heads you drink nothing, tails you drink 6",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 13,
+      "name": "Oath Breaker",
+      "axis": "lord-vs-vassal",
+      "options": [
+        {
+          "id": "penance",
+          "label": "Drink 3"
+        },
+        {
+          "id": "bond",
+          "label": "Choose a player: you drink whenever they do until your next turn",
+          "state": {
+            "kind": "squire",
+            "scope": "until-your-next-turn"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 14,
+      "name": "The Well Runs Dry",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "drink-now",
+          "label": "Finish your drink"
+        },
+        {
+          "id": "ration",
+          "label": "Drink 2 now and 2 at the start of your next turn",
+          "state": {
+            "kind": "rule",
+            "scope": "until-your-next-turn"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 15,
+      "name": "Night of Samhain",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "haunted",
+          "label": "You drink 3"
+        },
+        {
+          "id": "spirits",
+          "label": "The dead walk: everyone who has no power card drinks 2"
+        }
+      ]
+    },
+    {
+      "roll": 16,
+      "name": "A Toast to the King",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "toast",
+          "label": "Everyone drinks 1"
+        },
+        {
+          "id": "pour",
+          "label": "Name one player to drink 3"
+        }
+      ]
+    },
+    {
+      "roll": 17,
+      "name": "Druid's Warding",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "ward",
+          "label": "Keep a Ward: play it to cancel drinks aimed at you",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "bless",
+          "label": "Everyone else drinks 1 now"
+        }
+      ]
+    },
+    {
+      "roll": 18,
+      "name": "The Bard's Tale",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "tell",
+          "label": "Tell a thirty-second story; if the table claps, name someone to drink 3",
+          "manual": true
+        },
+        {
+          "id": "skip",
+          "label": "Drink 2 and say nothing"
+        }
+      ]
+    },
+    {
+      "roll": 19,
+      "name": "Hospitality",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "host",
+          "label": "Top up the drink of the player on your right"
+        },
+        {
+          "id": "guest",
+          "label": "Drink 2, and the player on your right drinks nothing next time they would",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 20,
+      "name": "Summons to Court",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "summon",
+          "label": "Keep a Summons: play it to make anyone drink 3",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "call",
+          "label": "The player opposite you drinks 2 now"
+        }
+      ]
+    },
+    {
+      "roll": 21,
+      "name": "Fidchell Match",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "play",
+          "label": "Challenge anyone: both roll, lower drinks 3",
+          "manual": true
+        },
+        {
+          "id": "decline",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 22,
+      "name": "The Champion's Portion",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "claim",
+          "label": "You take the champion's portion: everyone else drinks 1"
+        },
+        {
+          "id": "share",
+          "label": "Split it: you and one player you name both drink nothing next turn",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 23,
+      "name": "Feud",
+      "axis": "aim-out-vs-aim-in",
+      "options": [
+        {
+          "id": "start",
+          "label": "Name a rival: whenever either of you drinks this round, so does the other",
+          "state": {
+            "kind": "squire",
+            "scope": "until-die-returns"
+          }
+        },
+        {
+          "id": "end",
+          "label": "End every feud you are in, and drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 24,
+      "name": "The Turning of the Year",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "turn-now",
+          "label": "Play changes direction now",
+          "state": {
+            "kind": "direction",
+            "action": "flip"
+          }
+        },
+        {
+          "id": "hold",
+          "label": "Keep a Turning: play it to change direction whenever you like",
+          "state": {
+            "kind": "token",
+            "token": "reverse",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 25,
+      "name": "Brehon Law",
+      "axis": "short-vs-permanent",
+      "options": [
+        {
+          "id": "decree",
+          "label": "Make a law for the rest of the game; breaking it costs 2",
+          "manual": true,
+          "state": {
+            "kind": "rule",
+            "scope": "permanent"
+          }
+        },
+        {
+          "id": "edict",
+          "label": "Make a law until your next turn; breaking it costs 4",
+          "manual": true,
+          "state": {
+            "kind": "rule",
+            "scope": "until-your-next-turn"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 26,
+      "name": "Mead Hall",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "round",
+          "label": "Everyone drinks 2"
+        },
+        {
+          "id": "stand",
+          "label": "You drink 4, and everyone else drinks nothing"
+        }
+      ]
+    },
+    {
+      "roll": 27,
+      "name": "Honour Price",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "demand",
+          "label": "Name someone who has insulted you tonight: they drink 3",
+          "manual": true
+        },
+        {
+          "id": "waive",
+          "label": "Keep a Ward instead",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 28,
+      "name": "Hurling Match",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "play",
+          "label": "Everyone rolls; the lowest drinks 3",
+          "manual": true
+        },
+        {
+          "id": "watch",
+          "label": "Drink 1 and sit it out"
+        }
+      ]
+    },
+    {
+      "roll": 29,
+      "name": "The Harper's Lament",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "sing",
+          "label": "Sing a line of any song; the table decides if it counts",
+          "manual": true
+        },
+        {
+          "id": "drink",
+          "label": "Drink 3"
+        }
+      ]
+    },
+    {
+      "roll": 30,
+      "name": "Fosterage",
+      "axis": "lord-vs-vassal",
+      "options": [
+        {
+          "id": "foster",
+          "label": "Take a foster-child: whenever you drink, they drink 1",
+          "state": {
+            "kind": "squire",
+            "scope": "until-replaced"
+          }
+        },
+        {
+          "id": "fostered",
+          "label": "Be fostered by someone: drink with them, but they cannot target you",
+          "state": {
+            "kind": "squire",
+            "scope": "until-replaced"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 31,
+      "name": "A Gift of Gold",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "give",
+          "label": "Give any player a drink of 2"
+        },
+        {
+          "id": "keep",
+          "label": "Keep a Summons for later",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 32,
+      "name": "The Hunt",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "chase",
+          "label": "Roll again: over 50 and name two players to drink 2 each",
+          "manual": true
+        },
+        {
+          "id": "rest",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 33,
+      "name": "Ale of Forgetting",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "forget",
+          "label": "Discard any one card from your hand and drink nothing"
+        },
+        {
+          "id": "remember",
+          "label": "Keep your hand and drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 34,
+      "name": "Riddle of the Sphinx of Tara",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "ask",
+          "label": "Ask the table a riddle; everyone who cannot answer drinks 1",
+          "manual": true
+        },
+        {
+          "id": "answer",
+          "label": "The table asks you one; fail and drink 3",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 35,
+      "name": "Tribute",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "collect",
+          "label": "Every other player drinks 1"
+        },
+        {
+          "id": "pay",
+          "label": "You drink 1 for every other player"
+        }
+      ]
+    },
+    {
+      "roll": 36,
+      "name": "The Standing Stone",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "shelter",
+          "label": "Immune until your next turn",
+          "state": {
+            "kind": "immunity",
+            "scope": "until-your-next-turn"
+          }
+        },
+        {
+          "id": "stone",
+          "label": "Keep a Ward for later",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 37,
+      "name": "Poet's Satire",
+      "axis": "aim-out-vs-aim-in",
+      "options": [
+        {
+          "id": "satirise",
+          "label": "Satirise someone in one sentence; if the table laughs, they drink 3",
+          "manual": true
+        },
+        {
+          "id": "praise",
+          "label": "Praise someone in one sentence; you both drink 1",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 38,
+      "name": "Wedding Feast",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "couple",
+          "label": "Name two players: they each drink 2"
+        },
+        {
+          "id": "guests",
+          "label": "Everyone except you drinks 1"
+        }
+      ]
+    },
+    {
+      "roll": 39,
+      "name": "The Wolfhound",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "loose",
+          "label": "Keep a Summons: play it to make anyone drink 3",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "guard",
+          "label": "Keep a Ward: play it to cancel drinks aimed at you",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 40,
+      "name": "Crossroads",
+      "axis": "chaos-vs-certainty",
+      "options": [
+        {
+          "id": "left",
+          "label": "The player on your left drinks 2"
+        },
+        {
+          "id": "wild",
+          "label": "Roll again and whoever the result points at drinks 3: odd left, even right",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 41,
+      "name": "Bread and Salt",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "accept",
+          "label": "Accept the welcome: drink 1"
+        },
+        {
+          "id": "offer",
+          "label": "Offer it round: everyone else drinks 1"
+        }
+      ]
+    },
+    {
+      "roll": 42,
+      "name": "Messenger from Ulster",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "read",
+          "label": "The player on your right drinks 3 now"
+        },
+        {
+          "id": "seal",
+          "label": "Keep a Summons for later",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 43,
+      "name": "Stag's Leap",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "leap",
+          "label": "Roll again: if it beats 43, name someone to drink 4",
+          "manual": true
+        },
+        {
+          "id": "walk",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 44,
+      "name": "The Salmon Leaps",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "catch",
+          "label": "Name someone to drink 2"
+        },
+        {
+          "id": "wait",
+          "label": "Keep a Turning: play it to change direction whenever you like",
+          "state": {
+            "kind": "token",
+            "token": "reverse",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 45,
+      "name": "Council of Chieftains",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "vote",
+          "label": "The table votes on who drinks 3; you cannot be chosen",
+          "manual": true
+        },
+        {
+          "id": "abstain",
+          "label": "You drink 2 and the council does not sit"
+        }
+      ]
+    },
+    {
+      "roll": 46,
+      "name": "Borrowed Sword",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "borrow",
+          "label": "Keep a Summons",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "return",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 47,
+      "name": "The Bard's Wager",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "wager",
+          "label": "Guess whether the next roll is odd or even; wrong and you drink 4, right and name who does",
+          "manual": true
+        },
+        {
+          "id": "fold",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 48,
+      "name": "Cattle Count",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "rich",
+          "label": "Whoever holds the most cards drinks 1 for each",
+          "manual": true
+        },
+        {
+          "id": "poor",
+          "label": "Whoever holds the fewest cards drinks 3",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 49,
+      "name": "The Oak and the Ash",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "oak",
+          "label": "You drink 2 and are immune until your next turn",
+          "state": {
+            "kind": "immunity",
+            "scope": "until-your-next-turn"
+          }
+        },
+        {
+          "id": "ash",
+          "label": "Everyone else drinks 1"
+        }
+      ]
+    },
+    {
+      "roll": 50,
+      "name": "Midsummer Fires",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "leap",
+          "label": "Leap the fire: stand, turn round once, and sit, and name someone to drink 2",
+          "manual": true
+        },
+        {
+          "id": "watch",
+          "label": "Drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 51,
+      "name": "Kinslayer's Shame",
+      "axis": "aim-out-vs-aim-in",
+      "options": [
+        {
+          "id": "accuse",
+          "label": "Accuse someone: the table votes, and whoever loses the vote drinks 3",
+          "manual": true
+        },
+        {
+          "id": "confess",
+          "label": "Confess to something harmless; drink 1 and the table drinks with you",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 52,
+      "name": "Ferry to the Western Isles",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "sail",
+          "label": "Drink 3 now"
+        },
+        {
+          "id": "wait",
+          "label": "Drink 1 now and 1 at the start of each of your next two turns",
+          "state": {
+            "kind": "rule",
+            "scope": "until-ended"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 53,
+      "name": "Warband",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "lead",
+          "label": "Name two players: they drink 2 each"
+        },
+        {
+          "id": "follow",
+          "label": "The two players after you drink 1 each"
+        }
+      ]
+    },
+    {
+      "roll": 54,
+      "name": "The Bog Body",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "dig",
+          "label": "Roll again: 1-30 you drink 4, 31-100 name someone to drink 3",
+          "manual": true
+        },
+        {
+          "id": "leave",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 55,
+      "name": "Law of the Cauldron",
+      "axis": "short-vs-permanent",
+      "options": [
+        {
+          "id": "rule",
+          "label": "Whoever says a player's name must drink 1, for the rest of the game",
+          "manual": true,
+          "state": {
+            "kind": "rule",
+            "scope": "permanent"
+          }
+        },
+        {
+          "id": "once",
+          "label": "The next person to say a player's name drinks 3",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 56,
+      "name": "Shield Wall",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "wall",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "charge",
+          "label": "Everyone except you drinks 1"
+        }
+      ]
+    },
+    {
+      "roll": 57,
+      "name": "A Question of Precedence",
+      "axis": "tell-vs-guess",
+      "options": [
+        {
+          "id": "rank",
+          "label": "Rank the players by who would win a fight; the one you rank last drinks 2",
+          "manual": true
+        },
+        {
+          "id": "defer",
+          "label": "The table ranks you; if you come last you drink 3",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 58,
+      "name": "Silver Branch",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "shake",
+          "label": "Everyone falls quiet: the first to speak drinks 3",
+          "manual": true
+        },
+        {
+          "id": "keep",
+          "label": "Keep a Summons",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 59,
+      "name": "Raven Omen",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "heed",
+          "label": "Drink 2"
+        },
+        {
+          "id": "scorn",
+          "label": "Roll again: under 20 and you drink 6, otherwise nothing",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 60,
+      "name": "Ring-fort",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "build",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "raid",
+          "label": "Name someone: they discard their newest power card"
+        }
+      ]
+    },
+    {
+      "roll": 61,
+      "name": "The Seanchai",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "recite",
+          "label": "Recite a nursery rhyme without stopping; manage it and name who drinks 3",
+          "manual": true
+        },
+        {
+          "id": "drink",
+          "label": "Drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 62,
+      "name": "Swan Children",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "fly",
+          "label": "Skip your next turn and drink nothing now",
+          "state": {
+            "kind": "skip-turn",
+            "scope": "next-turn"
+          }
+        },
+        {
+          "id": "stay",
+          "label": "Drink 3 now"
+        }
+      ]
+    },
+    {
+      "roll": 63,
+      "name": "Dun Aengus Cliffs",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "edge",
+          "label": "Everyone rolls; the highest names someone to drink 4",
+          "manual": true
+        },
+        {
+          "id": "back",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 64,
+      "name": "The Hill of Tara",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "summon",
+          "label": "Keep a Summons: play it to make anyone drink 4",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "sanctuary",
+          "label": "Immune until your next turn",
+          "state": {
+            "kind": "immunity",
+            "scope": "until-your-next-turn"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 65,
+      "name": "Beltane",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "bless",
+          "label": "Everyone drinks 1, and the next Misfortune rolled is cancelled",
+          "manual": true
+        },
+        {
+          "id": "claim",
+          "label": "You drink nothing and name someone to drink 3"
+        }
+      ]
+    },
+    {
+      "roll": 66,
+      "name": "Ogham Stone",
+      "axis": "short-vs-permanent",
+      "options": [
+        {
+          "id": "carve",
+          "label": "Carve a name: that player drinks 1 every time they roll a Misfortune, for the rest of the game",
+          "manual": true,
+          "state": {
+            "kind": "rule",
+            "scope": "permanent"
+          }
+        },
+        {
+          "id": "read",
+          "label": "Name someone to drink 3 now"
+        }
+      ]
+    },
+    {
+      "roll": 67,
+      "name": "Coracle Race",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "race",
+          "label": "Race the player on your left: both roll, lower drinks 3",
+          "manual": true
+        },
+        {
+          "id": "drift",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 68,
+      "name": "Glamour of the Sidhe",
+      "axis": "tell-vs-guess",
+      "options": [
+        {
+          "id": "glamour",
+          "label": "Hide a coin in one hand; the player opposite guesses. Right and you drink 3, wrong and they do",
+          "manual": true
+        },
+        {
+          "id": "reveal",
+          "label": "Drink 1"
+        }
+      ]
+    },
+    {
+      "roll": 69,
+      "name": "Blessing of Brigid",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "heal",
+          "label": "Everyone who drank since your last turn drinks nothing next time they would",
+          "manual": true
+        },
+        {
+          "id": "well",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 70,
+      "name": "Horse Fair",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "sell",
+          "label": "Trade one of your cards with anyone who agrees",
+          "manual": true
+        },
+        {
+          "id": "buy",
+          "label": "Name someone to drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 71,
+      "name": "Cattle Raid of Cooley",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "raid",
+          "label": "Steal a power card from anyone's hand",
+          "state": {
+            "kind": "steal-card",
+            "scope": "now"
+          }
+        },
+        {
+          "id": "plan",
+          "label": "Keep a Raid: play it later to steal a power card from anyone",
+          "state": {
+            "kind": "token",
+            "token": "raid",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 72,
+      "name": "Cu Chulainn's Warp-Spasm",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "rage",
+          "label": "Name one player to drink 5"
+        },
+        {
+          "id": "sweep",
+          "label": "Everyone else drinks 2"
+        }
+      ]
+    },
+    {
+      "roll": 73,
+      "name": "The Fianna",
+      "axis": "lord-vs-vassal",
+      "options": [
+        {
+          "id": "recruit",
+          "label": "Recruit a warrior: whenever they drink, you name who drinks 1 with them",
+          "manual": true,
+          "state": {
+            "kind": "squire",
+            "scope": "until-replaced"
+          }
+        },
+        {
+          "id": "join",
+          "label": "Join someone's band: immune until your next turn, but drink whenever they do",
+          "state": {
+            "kind": "squire",
+            "scope": "until-your-next-turn"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 74,
+      "name": "Salmon of Knowledge",
+      "axis": "tell-vs-guess",
+      "options": [
+        {
+          "id": "taste",
+          "label": "Look at any player's hand; name one card and they drink 2",
+          "manual": true
+        },
+        {
+          "id": "share",
+          "label": "Everyone shows their hand; whoever holds the most powers drinks 3",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 75,
+      "name": "Morrigan's Crow",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "doom",
+          "label": "Keep a Summons: play it to make anyone drink 5",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "omen",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 76,
+      "name": "Nuada's Silver Hand",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "reclaim",
+          "label": "Take back the last power card anyone played, into your hand",
+          "manual": true
+        },
+        {
+          "id": "forge",
+          "label": "Keep a Summons",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 77,
+      "name": "Children of Lir",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "curse",
+          "label": "Name someone: they skip their next turn",
+          "state": {
+            "kind": "skip-turn",
+            "scope": "next-turn"
+          }
+        },
+        {
+          "id": "free",
+          "label": "Everyone who holds no power card keeps a Ward",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 78,
+      "name": "Diarmuid's Love Spot",
+      "axis": "aim-out-vs-aim-in",
+      "options": [
+        {
+          "id": "charm",
+          "label": "Name someone: until your next turn, they cannot target you",
+          "state": {
+            "kind": "immunity",
+            "scope": "until-your-next-turn"
+          }
+        },
+        {
+          "id": "elope",
+          "label": "Swap seats with anyone; the phone's direction stays",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 79,
+      "name": "The Great Raid",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "strike",
+          "label": "Steal a power card now",
+          "state": {
+            "kind": "steal-card",
+            "scope": "now"
+          }
+        },
+        {
+          "id": "muster",
+          "label": "Keep a Raid",
+          "state": {
+            "kind": "token",
+            "token": "raid",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 80,
+      "name": "Oisin in Tir na nOg",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "stay",
+          "label": "Skip your next two turns; nobody can target you until you return",
+          "state": {
+            "kind": "immunity",
+            "scope": "until-ended"
+          }
+        },
+        {
+          "id": "return",
+          "label": "Drink 3 and play on"
+        }
+      ]
+    },
+    {
+      "roll": 81,
+      "name": "Geis",
+      "axis": "drink-vs-do",
+      "options": [
+        {
+          "id": "lay",
+          "label": "Lay a geis on someone: a thing they must not do, or drink 4 each time",
+          "manual": true,
+          "state": {
+            "kind": "rule",
+            "scope": "permanent"
+          }
+        },
+        {
+          "id": "break",
+          "label": "Break your own geis: drink 5 and it is gone",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 82,
+      "name": "Balor's Eye",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "gaze",
+          "label": "The player you look at drinks 4",
+          "manual": true
+        },
+        {
+          "id": "close",
+          "label": "Everyone who holds a Summons discards it"
+        }
+      ]
+    },
+    {
+      "roll": 83,
+      "name": "Fionn's Thumb",
+      "axis": "tell-vs-guess",
+      "options": [
+        {
+          "id": "wisdom",
+          "label": "Ask anyone a yes or no question; they answer truly or drink 4",
+          "manual": true
+        },
+        {
+          "id": "secret",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 84,
+      "name": "The Morrigan Chooses",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "fate",
+          "label": "Roll again: whoever the last two digits point at round the table drinks 5",
+          "manual": true
+        },
+        {
+          "id": "defy",
+          "label": "Drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 85,
+      "name": "Sword of Light",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "wield",
+          "label": "Keep a Summons: play it to make anyone drink 4",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "sheath",
+          "label": "Keep a Turning",
+          "state": {
+            "kind": "token",
+            "token": "reverse",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 86,
+      "name": "Deirdre of the Sorrows",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "sorrow",
+          "label": "Everyone drinks 2"
+        },
+        {
+          "id": "bear",
+          "label": "You drink 4, and cancel the next drink aimed at anyone",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 87,
+      "name": "Raiders in the Night",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "steal",
+          "label": "Steal a power card now",
+          "state": {
+            "kind": "steal-card",
+            "scope": "now"
+          }
+        },
+        {
+          "id": "lie-low",
+          "label": "Keep a Raid: play it later to steal a power card",
+          "state": {
+            "kind": "token",
+            "token": "raid",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 88,
+      "name": "Wooing of Etain",
+      "axis": "lord-vs-vassal",
+      "options": [
+        {
+          "id": "woo",
+          "label": "Choose a partner: you drink together until your next turn",
+          "state": {
+            "kind": "squire",
+            "scope": "until-your-next-turn"
+          }
+        },
+        {
+          "id": "refuse",
+          "label": "Drink 2 alone"
+        }
+      ]
+    },
+    {
+      "roll": 89,
+      "name": "The Dagda's Harp",
+      "axis": "chaos-vs-certainty",
+      "options": [
+        {
+          "id": "sorrow",
+          "label": "Everyone drinks 1"
+        },
+        {
+          "id": "mirth",
+          "label": "Everyone who holds a power card drinks 1; everyone without one names who drinks with them",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "roll": 90,
+      "name": "Brian Boru",
+      "axis": "offence-vs-defence",
+      "options": [
+        {
+          "id": "muster",
+          "label": "Keep a Raid",
+          "state": {
+            "kind": "token",
+            "token": "raid",
+            "scope": "until-spent"
+          }
+        },
+        {
+          "id": "hold",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 91,
+      "name": "Queen Medb",
+      "axis": "aim-out-vs-aim-in",
+      "options": [
+        {
+          "id": "demand",
+          "label": "Demand a power card from anyone; they give it or drink 5",
+          "manual": true
+        },
+        {
+          "id": "taunt",
+          "label": "Name someone: they drink 3"
+        }
+      ]
+    },
+    {
+      "roll": 92,
+      "name": "Lugh of the Long Arm",
+      "axis": "concentrate-vs-spread",
+      "options": [
+        {
+          "id": "spear",
+          "label": "Name one player to drink 4"
+        },
+        {
+          "id": "skills",
+          "label": "Everyone else drinks 1, and you keep a Summons",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 93,
+      "name": "The Second Battle of Mag Tuired",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "battle",
+          "label": "Everyone rolls; the lowest two drink 3 each",
+          "manual": true
+        },
+        {
+          "id": "truce",
+          "label": "Everyone drinks 1"
+        }
+      ]
+    },
+    {
+      "roll": 94,
+      "name": "Grainne's Flight",
+      "axis": "now-vs-later",
+      "options": [
+        {
+          "id": "flee",
+          "label": "Immune until your next turn",
+          "state": {
+            "kind": "immunity",
+            "scope": "until-your-next-turn"
+          }
+        },
+        {
+          "id": "face",
+          "label": "Keep a Turning",
+          "state": {
+            "kind": "token",
+            "token": "reverse",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 95,
+      "name": "The Morrigan's Bargain",
+      "axis": "risk-vs-certainty",
+      "options": [
+        {
+          "id": "bargain",
+          "label": "Discard all your cards; name someone to drink 1 for each",
+          "manual": true
+        },
+        {
+          "id": "keep",
+          "label": "Keep your cards and drink 2"
+        }
+      ]
+    },
+    {
+      "roll": 96,
+      "name": "The Stone of Fal",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "roar",
+          "label": "The stone roars for you: everyone else drinks 2"
+        },
+        {
+          "id": "claim",
+          "label": "Keep a Ward",
+          "state": {
+            "kind": "token",
+            "token": "shield",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 97,
+      "name": "The Spear of Lugh",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "throw",
+          "label": "Name one player to drink 6"
+        },
+        {
+          "id": "keep",
+          "label": "Keep a Summons: play it to make anyone drink 6",
+          "state": {
+            "kind": "token",
+            "token": "strike",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 98,
+      "name": "The Sword of Nuada",
+      "axis": "now-vs-banked",
+      "options": [
+        {
+          "id": "draw",
+          "label": "Steal a power card now",
+          "state": {
+            "kind": "steal-card",
+            "scope": "now"
+          }
+        },
+        {
+          "id": "sheathe",
+          "label": "Keep a Raid",
+          "state": {
+            "kind": "token",
+            "token": "raid",
+            "scope": "until-spent"
+          }
+        }
+      ]
+    },
+    {
+      "roll": 99,
+      "name": "The Cauldron of the Dagda",
+      "axis": "self-vs-table",
+      "options": [
+        {
+          "id": "feast",
+          "label": "You drink 3, then nobody else can be made to drink until your next turn",
+          "manual": true
+        },
+        {
+          "id": "fill",
+          "label": "Everyone else drinks 3"
+        }
+      ]
+    },
+    {
+      "roll": 100,
+      "name": "Ard Ri",
+      "axis": "spread-vs-concentrate",
+      "options": [
+        {
+          "id": "crown",
+          "label": "Take the crown: until the die returns to you, every power played at the table is yours to redirect",
+          "manual": true,
+          "state": {
+            "kind": "crown",
+            "scope": "until-die-returns"
+          }
+        },
+        {
+          "id": "feast",
+          "label": "Hold the feast: everyone else drinks 3, and you play one of your power cards free",
+          "manual": true
+        }
+      ]
+    }
+  ]
+}
