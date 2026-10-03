@@ -225,6 +225,7 @@
           "label": "Choose a player: you drink whenever they do until your next turn",
           "state": {
             "kind": "squire",
+            "who": "choose-one",
             "scope": "until-your-next-turn"
           }
         }
@@ -393,6 +394,7 @@
           "label": "Name a rival: whenever either of you drinks this round, so does the other",
           "state": {
             "kind": "squire",
+            "who": "choose-one",
             "scope": "until-die-returns"
           }
         },
@@ -529,6 +531,7 @@
           "label": "Take a foster-child: whenever you drink, they drink 1",
           "state": {
             "kind": "squire",
+            "who": "choose-one",
             "scope": "until-replaced"
           }
         },
@@ -537,6 +540,7 @@
           "label": "Be fostered by someone: drink with them, but they cannot target you",
           "state": {
             "kind": "squire",
+            "who": "choose-one",
             "scope": "until-replaced"
           }
         }
@@ -1186,6 +1190,7 @@
           "manual": true,
           "state": {
             "kind": "rule",
+            "who": "choose-one",
             "scope": "permanent"
           }
         },
@@ -1314,6 +1319,7 @@
           "manual": true,
           "state": {
             "kind": "squire",
+            "who": "choose-one",
             "scope": "until-replaced"
           }
         },
@@ -1322,6 +1328,7 @@
           "label": "Join someone's band: immune until your next turn, but drink whenever they do",
           "state": {
             "kind": "squire",
+            "who": "choose-one",
             "scope": "until-your-next-turn"
           }
         }
@@ -1400,6 +1407,7 @@
           "label": "Name someone: they skip their next turn",
           "state": {
             "kind": "skip-turn",
+            "who": "choose-one",
             "scope": "next-turn"
           }
         },
@@ -1420,6 +1428,7 @@
           "label": "Name someone: until your next turn, they cannot target you",
           "state": {
             "kind": "immunity",
+            "who": "choose-one",
             "scope": "until-your-next-turn"
           }
         },
@@ -1464,7 +1473,8 @@
           "label": "Skip your next two turns; nobody can target you until you return",
           "state": {
             "kind": "immunity",
-            "scope": "until-ended"
+            "scope": "until-your-next-turn",
+            "skipTurns": 2
           }
         },
         {
@@ -1484,6 +1494,7 @@
           "manual": true,
           "state": {
             "kind": "rule",
+            "who": "choose-one",
             "scope": "permanent"
           }
         },
@@ -1622,6 +1633,7 @@
           "label": "Choose a partner: you drink together until your next turn",
           "state": {
             "kind": "squire",
+            "who": "choose-one",
             "scope": "until-your-next-turn"
           }
         },
