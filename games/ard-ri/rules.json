@@ -138,12 +138,18 @@
         {
           "id": "brief",
           "label": "Until your next turn, you drink 1 whenever anyone laughs",
-          "manual": true
+          "state": {
+            "kind": "rule",
+            "scope": "until-your-next-turn"
+          }
         },
         {
           "id": "lingering",
           "label": "For the rest of the game, you drink 1 whenever you swear",
-          "manual": true
+          "state": {
+            "kind": "rule",
+            "scope": "permanent"
+          }
         }
       ]
     },
@@ -1848,7 +1854,10 @@
         {
           "id": "feast",
           "label": "You drink 3, then nobody else can be made to drink until your next turn",
-          "manual": true
+          "state": {
+            "kind": "rule",
+            "scope": "until-your-next-turn"
+          }
         },
         {
           "id": "fill",
@@ -1871,7 +1880,7 @@
           }
         },
         {
-          "id": "feast",
+          "id": "hold-feast",
           "label": "Hold the feast: everyone else drinks 3, and you play one of your power cards free",
           "manual": true
         }
