@@ -1880,7 +1880,7 @@
           }
         },
         {
-          "id": "hold-feast",
+          "id": "feast",
           "label": "Hold the feast: everyone else drinks 3, and you play one of your power cards free",
           "manual": true
         }
