@@ -157,7 +157,7 @@ The treasures of the Tuatha De Danann.
 
 | Roll | Card | Option A | Option B |
 |:---:|---|---|---|
-| 100 | Ard Ri | Take the crown: until the die returns to you, every power played at the table is yours to redirect | Hold the feast: everyone else drinks 3, and you play one of your power cards free |
+| 100 | Ard Ri | Take the crown: until the die returns to you, you may redirect one power played at the table | Hold the feast: everyone else drinks 3, and you play one of your power cards free |
 
 ---
 

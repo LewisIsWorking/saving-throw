@@ -1872,7 +1872,7 @@
       "options": [
         {
           "id": "crown",
-          "label": "Take the crown: until the die returns to you, every power played at the table is yours to redirect",
+          "label": "Take the crown: until the die returns to you, you may redirect one power played at the table",
           "manual": true,
           "state": {
             "kind": "crown",
