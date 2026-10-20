@@ -107,7 +107,13 @@
       "options": [
         {
           "id": "give",
-          "label": "Give one of your power cards to the player on your left"
+          "label": "Give one of your power cards to the player on your left",
+          "state": {
+            "kind": "discard",
+            "which": "chosen-power",
+            "to": "left",
+            "scope": "now"
+          }
         },
         {
           "id": "keep",
@@ -600,7 +606,12 @@
       "options": [
         {
           "id": "forget",
-          "label": "Discard any one card from your hand and drink nothing"
+          "label": "Discard any one card from your hand and drink nothing",
+          "state": {
+            "kind": "discard",
+            "which": "chosen",
+            "scope": "now"
+          }
         },
         {
           "id": "remember",
