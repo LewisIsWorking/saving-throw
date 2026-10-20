@@ -126,7 +126,12 @@
         },
         {
           "id": "pay-one",
-          "label": "Discard your newest card and drink 2"
+          "label": "Discard your newest card and drink 2",
+          "state": {
+            "kind": "discard",
+            "which": "newest",
+            "scope": "now"
+          }
         }
       ]
     },
@@ -1090,7 +1095,13 @@
         },
         {
           "id": "raid",
-          "label": "Name someone: they discard their newest power card"
+          "label": "Name someone: they discard their newest power card",
+          "state": {
+            "kind": "discard",
+            "which": "newest-power",
+            "who": "choose-one",
+            "scope": "now"
+          }
         }
       ]
     },
@@ -1523,7 +1534,12 @@
         },
         {
           "id": "close",
-          "label": "Everyone who holds a Summons discards it"
+          "label": "Everyone who holds a Summons discards it",
+          "state": {
+            "kind": "discard",
+            "which": "every-strike",
+            "scope": "now"
+          }
         }
       ]
     },
@@ -1774,7 +1790,12 @@
         {
           "id": "bargain",
           "label": "Discard all your cards; name someone to drink 1 for each",
-          "manual": true
+          "manual": true,
+          "state": {
+            "kind": "discard",
+            "which": "all",
+            "scope": "now"
+          }
         },
         {
           "id": "keep",
