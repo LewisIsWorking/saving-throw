@@ -1445,7 +1445,10 @@
         {
           "id": "free",
           "label": "Everyone who holds no power card keeps a Ward",
-          "manual": true
+          "state": {
+            "kind": "ward-the-powerless",
+            "scope": "now"
+          }
         }
       ]
     },
